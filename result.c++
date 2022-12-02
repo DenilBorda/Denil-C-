@@ -13,11 +13,15 @@ int main()
     {
         cout<<" Grade B ";
     }
-    else if(45<=marks && marks 45)
+    else if(45<=marks && marks<60)
     {
         cout<<" Grade C ";
     }
-    else if(35<marks && marks 45)
+    else if(35<marks && marks<45)
+    {
+        cout<<" Grade D ";
+    }
+    else if(marks <= 35)
     {
         cout<<" Fail ";
     }
