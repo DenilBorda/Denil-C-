@@ -17,7 +17,7 @@ int main()
     {
         if(b>c)
         {
-            cout<<"B is larger number";-+
+            cout<<"B is larger number";
         }
         else
         {
