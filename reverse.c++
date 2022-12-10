@@ -6,8 +6,8 @@ int reverse (int n)
     while(n!=0)
     {
         d = n % 10;
-        b= b * 10 + d;
-        n= n / 10;
+        b = b * 10 + d;
+        n = n / 10;
     }
     return b;
 }
