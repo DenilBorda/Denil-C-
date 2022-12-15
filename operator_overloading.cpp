@@ -13,7 +13,7 @@ class Num
     {
         Num t;
         t.real = real + z.real;
-        t.real = img + z.img;
+        t.img = img + z.img;
         return t;
     }
 };
