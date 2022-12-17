@@ -28,7 +28,7 @@ int main()
     Num a,b;
     a.setdata(2,3);
     a.getdata();
-    cout<<"After increament :"<<endl; 
+    cout<<"After decreament :"<<endl;
     b = --a;
     b.getdata();
 }

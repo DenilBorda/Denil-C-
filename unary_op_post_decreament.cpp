@@ -28,8 +28,8 @@ int main()
     Num a,b;
     a.setdata(2,3);
     a.getdata();
-    cout<<"After increament :"<<endl;
-    a--; 
+    cout<<"After decreament :"<<endl;
+    a--;
     b = a;
     b.getdata();
 }
