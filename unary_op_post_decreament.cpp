@@ -8,7 +8,7 @@ class Num
     void getdata();
     Num operator--(int);  
 };
-void Num ::setdata(int r,int i)
+void Num :: setdata(int r,int i)
 {
     real = r;
     img = i;
@@ -23,7 +23,7 @@ Num  Num :: operator--(int)
     r.real = real--;
     r.img = img--; 
 }
-int main()
+int main() 
 {
     Num a,b;
     a.setdata(2,3);
