@@ -2,29 +2,32 @@
 using namespace std;
 class bank
 {
-    int deposite,withdraw,showbalance;
+    int amount=10000;
     public:
-    void setdata()
+    void deposite(int n)
     {
-        cout<<"Enter Deposite Amount :";
-        cin>>deposite;
-        cout<<"Enter Withdraw Amount :";
-        cin>>withdraw;
+        amount = amount + n;
     }
-    int calculate()
+    int withdraw(int n)
     {
-        showbalance = deposite - withdraw;
+        if (n <= amount)
+        {
+            amount = amount - n;
+        }
+        else
+        {
+            cout<<"Influence Balance.....:";
+        }
     }
-    void display()
+    void balance()
     {
-        cout<<"Total balance :"<<showbalance<<endl;
+        cout<<"\n Total Balance :"<<amount;
     }
 };
 int main()
 {
     bank a;
-    a.setdata();
-    a.calculate();
-    a.display();    
+    a.deposite(5000);
+    a.withdraw(10000);
+    a.balance();    
 }
-
