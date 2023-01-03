@@ -2,10 +2,24 @@
 using namespace std;
 class Food
 {
-    float qty,total, t = 0, k = 0, p = 0, c = 0, n = 0, r = 0;
-
+    float qty,total=0,t = 0,k = 0,p = 0,c = 0,n = 0,r = 0;
     public:
     static int count;
+    food()
+    {
+        cout << "\n\t\t\t\t\t\t----------------------------------------------";
+        cout << "\n\t\t\t\t\t\t----------------Gate-To-Goa-------------------";
+        cout << "\n\t\t\t\t\t\t----------------------------------------------";
+        cout << "\n\t\t\t\t\t\t-     1.Tikka                   220.00       -";
+        cout << "\n\t\t\t\t\t\t-     2.Kaju kari               150.00       -";
+        cout << "\n\t\t\t\t\t\t-     3.Paneer                  280.00       -";
+        cout << "\n\t\t\t\t\t\t-     4.Cheez Tanduri           360.00       -";
+        cout << "\n\t\t\t\t\t\t-     5.Nan                      50.00       -";
+        cout << "\n\t\t\t\t\t\t-     6.Roti                     40.00       -";
+        cout << "\n\t\t\t\t\t\t-     7.total                                -";
+        cout << "\n\t\t\t\t\t\t-     8.Exit                                 -";
+        cout << "\n\t\t\t\t\t\t----------------------------------------------";
+    }
     void Tikka()
     {
         cout << "\n\t\t\t\t\t\tQty For Tikka:";
@@ -66,29 +80,39 @@ class Food
     }
     void exit()
     {
-        cout << "\n\t\t\t\t\t\tQty of all total:" << total;
-        cout << "\n\t\t\t\t\t\ttotal food odear:" << Food::count;
-        cout << "\n\t\t\t\t\t\t~~~~~~~~~~~~~~~~~~~Exit~~~~~~~~~~~~~~~~~~~~~~~";
+        int gst,netbill,dis,final;
+       
+
+        cout << "\n\t\t\t\t\t\tQty of all total:" <<total;
+        cout << "\n\t\t\t\t\t\tTotal Food Order:" <<Food::count;
+        gst = total * 0.5;
+        dis = total * 0.03;
+        netbill = total + gst;
+        final = total - dis;
+        cout<<"\n\t\t\t\t\t\t Discount :"<<dis;
+        cout<<"\n\t\t\t\t\t\t Final Bill :"<<final;
+        cout<<"\n\t\t\t\t\t\t Gst Bill :"<<gst;
+        cout<<"\n\t\t\t\t\t\t Net Bill :"<<netbill;
+        cout <<"\n\t\t\t\t\t\t-----------Thank You For Visit----------------";
     }
 };
 int Food::count;
 int main()
 {
-
     Food Denil;
     int ch;
-    cout << "\n\t\t\t\t\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
-    cout << "\n\t\t\t\t\t\t~~~~~~~~~~~~~~~~Gate~To~Goa~~~~~~~~~~~~~~~~~~~";
-    cout << "\n\t\t\t\t\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
-    cout << "\n\t\t\t\t\t\t~     1.Tikka                   220.00       ~";
-    cout << "\n\t\t\t\t\t\t~     2.Kaju kari               150.00       ~";
-    cout << "\n\t\t\t\t\t\t~     3.Paneer                  280.00       ~";
-    cout << "\n\t\t\t\t\t\t~     4.Cheez Tanduri           360.00       ~";
-    cout << "\n\t\t\t\t\t\t~     5.Nan                      50.00       ~";
-    cout << "\n\t\t\t\t\t\t~     6.Roti                     40.00       ~";
-    cout << "\n\t\t\t\t\t\t~     7.total                                ~";
-    cout << "\n\t\t\t\t\t\t~     8.Exit                                 ~";
-    cout << "\n\t\t\t\t\t\t~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+    cout << "\n\t\t\t\t\t\t----------------------------------------------";
+    cout << "\n\t\t\t\t\t\t----------------Gate-To-Goa-------------------";
+    cout << "\n\t\t\t\t\t\t----------------------------------------------";
+    cout << "\n\t\t\t\t\t\t-     1.Tikka                   220.00       -";
+    cout << "\n\t\t\t\t\t\t-     2.Kaju kari               150.00       -";
+    cout << "\n\t\t\t\t\t\t-     3.Paneer                  280.00       -";
+    cout << "\n\t\t\t\t\t\t-     4.Cheez Tanduri           360.00       -";
+    cout << "\n\t\t\t\t\t\t-     5.Nan                      50.00       -";
+    cout << "\n\t\t\t\t\t\t-     6.Roti                     40.00       -";
+    cout << "\n\t\t\t\t\t\t-     7.total                                -";
+    cout << "\n\t\t\t\t\t\t-     8.Exit                                 -";
+    cout << "\n\t\t\t\t\t\t----------------------------------------------";
     while (ch > 0)
     {
         cout << "\n\t\t\t\t\t\tEnter Your Choice:";
