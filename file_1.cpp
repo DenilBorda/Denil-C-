@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    ofstream filestream("file1.txt");
+    ofstream filestream("file1  .txt");
     if(filestream.is_open())
     {
         filestream<<"Wel-come to skillQude";
